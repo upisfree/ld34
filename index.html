@@ -9,6 +9,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="./lib/animate.css">
 
     <title>ld34</title>
@@ -16,13 +18,82 @@
     <style>
 body
 {
+  font-family: 'Lora', serif;
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+video
+{
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+h1
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  cursor: default;
+}
+
+#text
+{
+  top: 10%;
+  left: 5%;
+  font-size: 80px;
+}
+
+#act1, #act2
+{
+  left: 5%;
+  padding: 20px;
+  font-size: 50px;
+  background: rgba(155, 155, 155, 0.25);
+  color: #fff;
+  cursor: pointer;
+}
+
+#act1:hover,
+#act2:hover
+{
+  background: rgba(155, 155, 155, 0.75);
+}
+
+#act1
+{
+  top: 45%;
+}
+
+#act2
+{
+  top: 60%;
 }
     </style>
   </head>
   <body>
+    <video src="./assets/start.mp4" autoplay loop preload></video>
+
+    <h1 id="text">long, long textlong, long textlong, long textlong, long textlong, long text</h1>
+
+    <h1 id="act1" class="animated infinite shake">action 1</h1>
+    <h1 id="act2" class="animated infinite shake">action 2</h1>
+
     <script src="./bin/ld34.js"></script>
   </body>
 </html>
