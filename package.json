@@ -1,0 +1,23 @@
+{
+  "name": "ld34",
+  "version": "1.0.0",
+  "devDependencies": {
+    "coffeeify": "*",
+    "gulp": "*",
+    "gulp-browserify": "*",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*"
+  },
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/upisfree/ld34.git"
+  },
+  "author": "upisfree",
+  "bugs": {
+    "url": "https://github.com/upisfree/ld34/issues"
+  },
+  "homepage": "https://github.com/upisfree/ld34"
+}
