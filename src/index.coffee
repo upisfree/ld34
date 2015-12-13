@@ -8,10 +8,25 @@ byClass = (a) ->
 byTag = (a) ->
   document.getElementsByTagName a
 
-setText = (t, _id) -> # cause it's reserwed word
-  byId(_id).innerText = t
+text = (t) -> # cause it's reserwed word
+  byId("text").innerText = t
+
+# functions
+parseStory = (t) ->
+  t = JSON.parse t
+  console.log t
 
 # start
-setText 'допустим, это достаточно длинный и загадочный русский текст', 'text'
-setText 'мартынов', 'act1'
-setText 'лох', 'act2'
+# load json with story
+xhr = new XMLHttpRequest()
+xhr.open 'GET', 'story.json', true
+xhr.send();
+
+xhr.onreadystatechange = ->
+  if xhr.readyState != 4
+    return
+
+  if xhr.status != 200
+    alert "Hm...\nError! Press F5.\n\nError code: " + xhr.status
+  else
+    parseStory xhr.responseText
