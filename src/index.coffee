@@ -16,6 +16,8 @@ text = byId('text')
 _act1 = ''
 _act2 = ''
 
+end = false
+
 initStage = (key, stage, first) ->
   _act1 = stage.a1
   _act2 = stage.a2
@@ -27,6 +29,9 @@ initStage = (key, stage, first) ->
 
   video.loop = false
   video.src = "./assets/#{key}.mp4"
+
+  if stage.end
+    end = true
 
   if not first
     text.style.display = 'none'
@@ -51,8 +56,9 @@ xhr.onreadystatechange = ->
     initStage 'start', story['start'], true
 
     video.onended = (e) ->
-      console.log 'end'
-
+      if end
+        location.reload()
+      
       video.loop = true
       video.src = "./assets/start.mp4"
 
