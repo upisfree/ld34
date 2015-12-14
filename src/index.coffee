@@ -1,4 +1,7 @@
 # utils
+rand = (min, max) ->
+  Math.floor(Math.random() * (max - min) + min)
+
 byId = (a) ->
   document.getElementById a
 
@@ -12,6 +15,9 @@ byTag = (a) ->
 story = null
 video = byTag('video')[0]
 text = byId('text')
+
+canvas = byId 'icon'
+ctx = canvas.getContext '2d'
 
 _act1 = ''
 _act2 = ''
@@ -71,3 +77,14 @@ xhr.onreadystatechange = ->
 
     byId('act2').onclick = ->
       initStage _act2, story[_act2]
+
+# icon
+setInterval ->
+  ctx.fillStyle = '#000'
+  ctx.fillRect 0, 0, 16, 16
+  ctx.fillStyle = '#ffffff'
+  ctx.font = 'bold 14px Lora'
+  ctx.fillText rand(0, 9), 4, 13
+
+  byTag('link')[0].href = canvas.toDataURL 'image/x-icon'
+, 75
