@@ -49,7 +49,7 @@ xhr.onreadystatechange = ->
     return
 
   if xhr.status != 200
-    alert "Hm...\nError! Press F5.\n\nError code: " + xhr.status
+    alert 'Hm...\nError! Press F5.\n\nError code: ' + xhr.status
   else
     story = JSON.parse xhr.responseText
 
@@ -60,7 +60,7 @@ xhr.onreadystatechange = ->
         location.reload()
       
       video.loop = true
-      video.src = "./assets/start.mp4"
+      video.src = './assets/start.mp4'
 
       text.style.display = 'block'
       byId('act1').style.display = 'block'

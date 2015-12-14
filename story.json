@@ -1,41 +1,41 @@
 {
   "start": 
   {
-    "t": "Включить телевизор?",
+    "t": "Turn on the TV?",
     "a1": "basement",
     "a2": "head"
   },
   
   "6996":
   {
-    "t": "Слава богу!",
+    "t": "Thank god!",
     "end": true
   },
   
   "basement":
   {
-    "t": "Познакомиться с его другом?",
+    "t": "Get introduced to his friend?",
     "a1": "bob",
     "a2": "child"
   },
 
   "bob":
   {
-    "t": "Быть в Шанхае?",
+    "t": "Being in Shanghai?",
     "a1": "masks",
     "a2": "mmg_f"
   },
 
   "child":
   {
-    "t": "Пожалеть её?",
+    "t": "Pity her?",
     "a1": "laura",
     "a2": "train"
   },
 
   "cut":
   {
-    "t": "Кто это?",
+    "t": "Who's that?",
     "a1": "face",
     "a2": "end"
   },
@@ -49,7 +49,7 @@
 
   "face":
   {
-    "t": "Из его жара вышел гигант.",
+    "t": "He came out of him.",
     "a1": "max_f",
     "a2": "happy"
   },
@@ -63,34 +63,34 @@
 
   "happy":
   {
-    "t": "А ты точно счастлив?",
+    "t": "And you sure happy?",
     "a1": "fc",
     "a2": "mmg_f"
   },
 
   "head":
   {
-    "t": "Переключить канал?",
+    "t": "Change the channel?",
     "a1": "happy",
     "a2": "mmg_s"
   },
 
   "heaven":
   {
-    "t": "Господь, прости нас.",
+    "t": "Lord, forgive us.",
     "end": true
   },
 
   "laura":
   {
-    "t": "Помочь ей?",
+    "t": "Help her?",
     "a1": "truth",
     "a2": "child"
   },
 
   "masks":
   {
-    "t": "Ты был в Индии?",
+    "t": "Have you been in India?",
     "a1": "heaven",
     "a2": "mind"
   },
@@ -111,48 +111,48 @@
 
   "mind":
   {
-    "t": "Мутно?",
+    "t": "Dull?",
     "a1": "fc",
     "a2": "6996"
   },
 
   "mmg_s":
   {
-    "t": "Он приглядывает за тобой?",
+    "t": "He is spying on you?",
     "a1": "stalin",
     "a2": "truth"
   },
 
   "mmg_f":
   {
-    "t": "Ты пачкал руки?",
+    "t": "You get your hands dirty?",
     "a1": "bob",
     "a2": "stand"
   },
 
   "stalin":
   {
-    "t": "Ты разрезал плоть?",
+    "t": "You cut the flesh?",
     "a1": "cut",
     "a2": "max"
   },
 
   "stand":
   {
-    "t": "Остановишься?",
+    "t": "Stop?",
     "a1": "heaven",
     "a2": "stalin"
   },
 
   "train":
   {
-    "t": "Может, хватит?",
+    "t": "May be enough?",
     "end": true
   },
 
   "truth":
   {
-    "t": "Правда?",
+    "t": "Yea?",
     "a1": "max_f",
     "a2": "happy"
   }
